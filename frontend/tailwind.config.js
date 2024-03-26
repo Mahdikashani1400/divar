@@ -12,12 +12,17 @@ export default {
     },
     extend: {
       colors: {
-        "main_color": "#A62626"
+        "primary_red": "#A62626",
+        "primary-gray": "rgba(0,0,0,.56)"
+
       },
       spacing: {
         '25': "100px",
         '50': "200px",
       },
+      boxShadow: {
+        "nav": "0 1px 2px 0 rgba(0,0,0,.12)"
+      }
     },
   },
   plugins: [

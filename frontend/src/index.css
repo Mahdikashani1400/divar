@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    @font-face {
+      font-family: IRANSans;
+      src: local("IRANSans"), url("./font/IRANSans/IRANSans_Light.ttf");
+      font-display: "swap";
+    }
+    body{
+        direction: rtl;
+       font-family: IRANSans; 
+      }
+  }
+
+@layer components{
+    .nav-list_container{
+     @apply flex items-center gap-2 child:px-4 child:py-3 text-xs text-primary-gray font-bold child:transition-all child:flex child:items-center child:gap-2   
+    }
+    .nav-list_item{
+        @apply rounded-md hover:bg-black/5 hover:text-black/85
+    }
+    .nav-search_input{
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.12) !important;
+        @apply bg-transparent border-none focus:border-none focus:shadow-nav focus:bg-white outline-none transition-all;
+        
+    }
+}  
