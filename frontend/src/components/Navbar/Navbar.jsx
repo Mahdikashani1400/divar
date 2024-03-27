@@ -1,6 +1,11 @@
 import React from 'react'
+import UseInputsAll from '../../UseInputsAll'
+import { Link } from 'react-router-dom'
 
 export default function () {
+
+     const [searchInput , setSerchInput , bindingSearchInput] = UseInputsAll('')
+
     return (
         <>
             <header className="bg-white sticky top-0 left-0  w-full py-2 px-14 shadow-nav">
@@ -35,7 +40,7 @@ export default function () {
                                             </use>
                                         </svg>
                                     </div>
-                                    <input type="text" className='input nav-search_input lg:w-[450px] pr-10 text-[14px] h-10 text-black font-bold tracking-wide placeholder:text-gray-400/60 placeholder:text-[14px]' placeholder='جستجو در همه آگهی ها' />
+                                    <input value={searchInput} {...bindingSearchInput} type="text" className='input nav-search_input lg:w-[450px] pr-10 text-[14px] h-10 text-black font-bold tracking-wide placeholder:text-gray-400/60 placeholder:text-[14px]' placeholder='جستجو در همه آگهی ها' />
                                 </div>
                             </form>
                         </div>
@@ -61,7 +66,7 @@ export default function () {
                             <a href="#" className='nav-list_item '>
 
                                 <span>پشتیبانی</span></a>
-                            <a href="#" className='mr-2 bg-primary_red text-normal text-white font-bold rounded-md hover:bg-primary_red/90'>ثبت آگهی</a>
+                            <Link to="/newRegistration" className='mr-2 bg-primary_red text-normal text-white font-bold rounded-md hover:bg-primary_red/90'>ثبت آگهی</Link>
                         </ul>
                     </div>
 
