@@ -3,12 +3,12 @@ import React from 'react'
 export default function () {
     return (
         <>
-            <header className="bg-white sticky  w-full py-2 px-14 shadow-nav">
+            <header className="bg-white sticky top-0 left-0  w-full py-2 px-14 shadow-nav">
 
-                <nav className='flex justify-between items-center'>
+                <nav className='flex flex-wrap justify-between items-center'>
                     <div className="right_side-nav flex items-center">
                         <a href='#' className=" relative inline-block  pe-4 mr-5 me-2 ">
-                            <img src="/download.svg" className='h-12 w-12' alt="" />
+                            <img src="/images/download.svg" className='h-12 w-12' alt="" />
                             <span className='absolute w-[1.2px] h-6 top-3 left-0 bg-black/10'></span>
                         </a>
                         <ul className='nav-list_container text-[14px] tracking-tighter child:h-fit '>
@@ -35,7 +35,7 @@ export default function () {
                                             </use>
                                         </svg>
                                     </div>
-                                    <input type="text" className='nav-search_input w-[450px] pr-10 text-[14px] h-10 text-black font-bold tracking-wide placeholder:text-gray-400/80 placeholder:text-xs' placeholder='جستجو در همه آگهی ها' />
+                                    <input type="text" className='nav-search_input lg:w-[450px] pr-10 text-[14px] h-10 text-black font-bold tracking-wide placeholder:text-gray-400/60 placeholder:text-[14px]' placeholder='جستجو در همه آگهی ها' />
                                 </div>
                             </form>
                         </div>
@@ -58,10 +58,10 @@ export default function () {
                                 </svg>
                                 <span>چت</span>
                             </a>
-                            <a href="#" className='nav-list_item'>
+                            <a href="#" className='nav-list_item '>
 
                                 <span>پشتیبانی</span></a>
-                            <a href="#" className='mr-2 bg-primary_red text-[.875rem] text-white font-bold rounded-md hover:bg-primary_red/90'>ثبت آگهی</a>
+                            <a href="#" className='mr-2 bg-primary_red text-normal text-white font-bold rounded-md hover:bg-primary_red/90'>ثبت آگهی</a>
                         </ul>
                     </div>
 

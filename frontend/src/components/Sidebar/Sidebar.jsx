@@ -1,79 +1,61 @@
-import { ListGroup, theme } from 'flowbite-react'
 import React from 'react'
 import { MdMapsHomeWork } from "react-icons/md";
-import { BsCarFront } from "react-icons/bs";
-import { BsPhone } from "react-icons/bs";
+import { BsPhone, BsCarFront } from "react-icons/bs";
 import { LuLamp } from "react-icons/lu";
-import { PiPaintBrushHouseholdThin } from "react-icons/pi";
 import { FiWatch } from "react-icons/fi";
 import { ImDice } from "react-icons/im";
 import { TbUsers } from "react-icons/tb";
-import { PiOfficeChairBold } from "react-icons/pi";
-import { PiSuitcaseSimpleLight } from "react-icons/pi";
+import { PiOfficeChairBold, PiPaintBrushHouseholdThin, PiSuitcaseSimpleLight } from "react-icons/pi";
 
 export default function Sidebar() {
-    const categoryListStyles =
-    {
-        "root": {
-            "base": "list-none rounded-lg border border-gray-200 bg-white text-left text-sm font-medium text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white"
-        },
-        "item": {
-            "base": "[&>*]:first:rounded-t-lg [&>*]:last:rounded-b-lg [&>*]:last:border-b-0 ",
-            "link": {
-                "base": "flex w-full justify-between items-center border-b border-gray-200 px-4 py-2 dark:border-gray-600",
-                "active": {
-                    "off": "hover:bg-gray-100 hover:text-cyan-700 focus:text-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:text-white dark:focus:ring-gray-500",
-                    "on": "bg-cyan-700 text-white dark:bg-gray-800"
-                },
-                "disabled": {
-                    "off": "",
-                    "on": "cursor-not-allowed bg-gray-100 text-gray-900 hover:bg-gray-100 hover:text-gray-900 focus:text-gray-900"
-                },
-                "href": {
-                    "off": "",
-                    "on": ""
-                },
-                "icon": "mr-7 h-4 w-4 fill-current"
-            }
-        }
-    }
-    //  {
+
 
 
     return (
-        <div className="flex justify-center">
-            <ListGroup className="w-48 text-primary-gray" theme={{ theme: categoryListStyles }}>
-                <ListGroup.Item className="child:flex child:gap-3" icon={MdMapsHomeWork} >
+        <div className="fixed top-16 mr-10 right-0  justify-center py-8 px-4">
+            <h2 className='text-primary-black text-xs font-normal py-2'>دسته ها</h2>
+            <ul className="w-48 my-2 flex flex-col child:py-1.5 text-primary-gray  child:flex child:gap-2 child:transition-all child:duration-[360ms] hover:child:text-black/90 text-normal" >
+                <a href='#' className=""  >
+                    <MdMapsHomeWork />
                     <span>املاک</span>
-                </ListGroup.Item>
-                <ListGroup.Item className="child:flex child:gap-3" icon={BsCarFront}>
+                </a>
+                <a href='#' className="" >
+                    <BsCarFront />
                     <span>وسایل نقلیه</span>
-                </ListGroup.Item>
-                <ListGroup.Item className="child:flex child:gap-3" icon={BsPhone}>
+                </a>
+                <a href='#' className="" >
+                    <BsPhone />
                     <span>کالای دیجیتال</span>
-                </ListGroup.Item>
-                <ListGroup.Item className="child:flex child:gap-3" icon={LuLamp}>
+                </a>
+                <a href='#' className="" >
+                    <LuLamp />
                     <span>خانه و آشپزخانه</span>
-                </ListGroup.Item>
-                <ListGroup.Item className="child:flex child:gap-3" icon={PiPaintBrushHouseholdThin}>
+                </a>
+                <a href='#' className="" >
+                    <PiPaintBrushHouseholdThin />
                     <span>خدمات</span>
-                </ListGroup.Item>
-                <ListGroup.Item className="child:flex child:gap-3" icon={FiWatch}>
+                </a>
+                <a href='#' className="" >
+                    <FiWatch />
                     <span>وسایل شخصی</span>
-                </ListGroup.Item>
-                <ListGroup.Item className="child:flex child:gap-3" icon={ImDice}>
+                </a>
+                <a href='#' className="" >
+                    <ImDice />
                     <span>سرگرمی و فراغت</span>
-                </ListGroup.Item>
-                <ListGroup.Item className="child:flex child:gap-3" icon={TbUsers}>
+                </a>
+                <a href='#' className="" >
+                    <TbUsers />
                     <span>اجتماعی</span>
-                </ListGroup.Item>
-                <ListGroup.Item className="child:flex child:gap-3" icon={PiOfficeChairBold}>
+                </a>
+                <a href='#' className="" >
+                    <PiOfficeChairBold />
                     <span>تجهیزات و صنعتی</span>
-                </ListGroup.Item>
-                <ListGroup.Item className="child:flex child:gap-3" icon={PiSuitcaseSimpleLight}>
+                </a>
+                <a href='#' className="" >
+                    <PiSuitcaseSimpleLight />
                     <span>استخدام و کاریابی</span>
-                </ListGroup.Item>
-            </ListGroup>
+                </a>
+            </ul>
         </div >
     )
 }

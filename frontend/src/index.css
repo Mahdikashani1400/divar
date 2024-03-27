@@ -9,6 +9,9 @@
       src: local("IRANSans"), url("./font/IRANSans/IRANSans_Light.ttf");
       font-display: "swap";
     }
+    html{
+        overflow-x: hidden;
+    }
     body{
         direction: rtl;
        font-family: IRANSans; 

@@ -8,12 +8,14 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "10px"
+      padding: "10px",
+
     },
     extend: {
       colors: {
         "primary_red": "#A62626",
-        "primary-gray": "rgba(0,0,0,.56)"
+        "primary-gray": "rgba(0,0,0,.56)",
+        "primary-black": "rgba(0,0,0,.87)"
 
       },
       spacing: {
@@ -22,6 +24,9 @@ export default {
       },
       boxShadow: {
         "nav": "0 1px 2px 0 rgba(0,0,0,.12)"
+      },
+      fontSize: {
+        "normal": ".875rem"
       }
     },
   },
