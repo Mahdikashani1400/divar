@@ -35,7 +35,7 @@ export default function () {
                                             </use>
                                         </svg>
                                     </div>
-                                    <input type="text" className='nav-search_input lg:w-[450px] pr-10 text-[14px] h-10 text-black font-bold tracking-wide placeholder:text-gray-400/60 placeholder:text-[14px]' placeholder='جستجو در همه آگهی ها' />
+                                    <input type="text" className='input nav-search_input lg:w-[450px] pr-10 text-[14px] h-10 text-black font-bold tracking-wide placeholder:text-gray-400/60 placeholder:text-[14px]' placeholder='جستجو در همه آگهی ها' />
                                 </div>
                             </form>
                         </div>

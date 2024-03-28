@@ -14,7 +14,7 @@ function App() {
       <Icons />
       <Navbar />
       <div className="container ">
-        <div className="flex 2xl:mx-10">
+        <div className="flex justify-end 2xl:mx-10">
           <Sidebar />
           {router}
         </div>

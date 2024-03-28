@@ -25,9 +25,23 @@
     .nav-list_item{
         @apply rounded-md hover:bg-black/5 hover:text-black/85
     }
-    .nav-search_input{
+    .input{
+       
+        @apply bg-transparent border-none focus:border-none focus:shadow-nav
+        outline-none transition-all;
         box-shadow: 0 1px 2px 0 rgba(0,0,0,.12) !important;
-        @apply bg-transparent border-none focus:border-none focus:shadow-nav focus:bg-white outline-none transition-all;
+    }
+    .nav-search_input{
         
+        @apply input  focus:bg-white ;
+        
+    }
+    .category-list_items{
+        @apply leading-6 w-48 my-2 flex flex-col child:py-1.5 text-primary-gray/65  child:flex child:gap-2 child:transition-all child:duration-[360ms] hover:child:text-black/100  text-normal
+    }
+   
+    .subset-cat.active{
+        @apply text-primary_red font-semibold ;
+        border-color: rgb(166 38 38) !important;
     }
 }  
