@@ -39,9 +39,25 @@
     .category-list_items{
         @apply leading-6 w-48 my-2 flex flex-col child:py-1.5 text-primary-gray/65  child:flex child:gap-2 child:transition-all child:duration-[360ms] hover:child:text-black/100  text-normal
     }
-   
+    .top-bar_category .category-list_items{
+        @apply text-primary-gray child:flex child:justify-between child:items-center child:px-2 child:mb-2 child:child:flex child:child:items-center  child:child:gap-2 
+    }
+    .top-bar_category .category-list_items a:hover{
+        @apply bg-primary-gray/5 text-primary-gray
+    }
     .subset-cat.active{
-        @apply text-primary_red font-semibold ;
-        border-color: rgb(166 38 38) !important;
+        @apply relative text-primary_red
+    }
+    .subset-cat.active::before{
+        content: "";
+
+        @apply absolute bg-primary_red font-semibold w-0.5 h-4/5 top-0 right-0;
+        
+    }
+    .navbar-category_subset{
+        @apply flex text-normal flex-col gap-2 text-primary-gray first-of-type:child:font-semibold first-of-type:child:mb-2 first-of-type:child:text-normal child:transition-all
+    }
+    .navbar-category_subset a:not(:first-of-type):hover{
+        @apply text-primary_red
     }
 }  

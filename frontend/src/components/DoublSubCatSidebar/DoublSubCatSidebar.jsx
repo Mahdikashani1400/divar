@@ -20,8 +20,8 @@ export default function DoublSubCatSidebar() {
                 <span>املاک</span></a>
                 <ul className='category-list_items mr-12 w-full'>
                     <li className='flex-col'><a href="" className='text-primary-black font-bold flex gap-2 text-normal'>فروش مسکونی</a>
-                        <ul className='category-list_items w-full mr-4 child:pr-2 child:border-r-2 child:border-black/[12%] child:text-[.75rem]'>
-
+                        <ul className='category-list_items relative w-full mr-4 child:pr-2  child:text-[.75rem]'>
+                            <div className="absolute w-0.5 bg-black/[12%] h-full px-0 " style={{ padding: 0 }}></div>
                             <li className='subset-cat active'><a href="">آپارتمان</a></li>
                             <li><a href="">خانه و ویلا</a></li>
                             <li><a href="">
